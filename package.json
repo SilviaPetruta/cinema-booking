@@ -1,0 +1,23 @@
+{
+  "name": "cinema-booking",
+  "version": "1.0.0",
+  "description": "Challenge:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JRC404/cinema-booking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JRC404/cinema-booking/issues"
+  },
+  "homepage": "https://github.com/JRC404/cinema-booking#readme",
+  "devDependencies": {
+    "jest": "^26.4.0"
+  }
+}
