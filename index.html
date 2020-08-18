@@ -16,14 +16,14 @@
     <form action="src/index.js" class="customerForm">
         <div class="formInstructions">
             <h4>Please tell us your full name</h4>
-            </div>
+        </div>
         <div class="customerName">
             <label for="customerName">Customer Name: </label>
             <input type="text" id="customerName" name="customerName">
         </div>
         <div class="formInstructions">
-        <h4>Please choose the amount of tickets you require</h4>
-        <h5>Tickets are limited to a total of five per transaction</h5>
+            <h4>Please choose the amount of tickets you require</h4>
+            <h5>Tickets are limited to a total of five per transaction</h5>
         </div>
     <div class="ageBox">
         <label for="Junior">Junior Tickets (£4): </label>
@@ -47,14 +47,15 @@
 
     <div class="screenChoiceBox">
         <select id="screenChoice" name="screenChoice">
-          <option value="screen1-2d">Screen 1 (2D)</option>
-          <option value="screen1-3d" disabled>Screen 1 (3D)</option>
-          <option value="break" disabled>----------</option>
-          <option value="screen2-2d" disabled>Screen 2 (2D)</option>
-          <option value="screen2-3d">Screen 2 (3D)</option>
-          <option value="break" disabled>----------</option>
-          <option value="screen3-2d">Screen 3 (2D)</option>
-          <option value="screen3-3d">Screen 3 (3D)</option>
+            <option value="" selected disabled hidden>Type of screen</option>
+            <option value="screen1-2d">Screen 1 (2D)</option>
+            <option value="screen1-3d" disabled>Screen 1 (3D)</option>
+            <option value="break" disabled>----------</option>
+            <option value="screen2-2d" disabled>Screen 2 (2D)</option>
+            <option value="screen2-3d">Screen 2 (3D)</option>
+            <option value="break" disabled>----------</option>
+            <option value="screen3-2d">Screen 3 (2D)</option>
+            <option value="screen3-3d">Screen 3 (3D)</option>
         </select>
     </div>
 
@@ -88,13 +89,13 @@
     </div>
     
     <div class="submitBox">
-    <input type="submit" value="Submit">
+        <input type="submit" value="Submit">
     </div>
     </form>
 
 
 </div>
 
-<script src="index.js"></script>
+<script src="src/index.js"></script>
 </body>
 </html>
