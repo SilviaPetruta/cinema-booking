@@ -7,6 +7,94 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="mainPage">
+    <div class="heading">
+        <h1>Cinema Bookings</h1>
+        <h3>Please Fill Out The Following Form</h3>
+    </div>
+    
+    <form action="src/index.js" class="customerForm">
+        <div class="formInstructions">
+            <h4>Please tell us your full name</h4>
+            </div>
+        <div class="customerName">
+            <label for="customerName">Customer Name: </label>
+            <input type="text" id="customerName" name="customerName">
+        </div>
+        <div class="formInstructions">
+        <h4>Please choose the amount of tickets you require</h4>
+        <h5>Tickets are limited to a total of five per transaction</h5>
+        </div>
+    <div class="ageBox">
+        <label for="Junior">Junior Tickets (£4): </label>
+        <input type="number" class="juniorTickets" name="ticketQuantity" value="junior" min="0" max="5" value="0">
+        <br><br>
+        <label for="Adult">Adult Tickets (£8): </label>
+        <input type="number" class="juniorTickets" name="ticketQuantity" value="adult" min="0" max="5" value="0">
+        <br><br>
+        <label for="Senior">Senior Tickets (£6): </label>
+        <input type="number" class="juniorTickets" name="ticketQuantity" value="senior" min="0" max="5" value="0">
+        <br><br>
+        <label for="Student">Student Tickets (£5): </label>
+        <input type="number" class="juniorTickets" name="ticketQuantity" value="student" min="0" max="5" value="0">
+        <br><br>
+        
+    </div>
+    
+    <div class="formInstructions">
+        <h4>Please choose the screen you wish to view</h4>
+    </div>
+
+    <div class="screenChoiceBox">
+        <select id="screenChoice" name="screenChoice">
+          <option value="screen1-2d">Screen 1 (2D)</option>
+          <option value="screen1-3d" disabled>Screen 1 (3D)</option>
+          <option value="break" disabled>----------</option>
+          <option value="screen2-2d" disabled>Screen 2 (2D)</option>
+          <option value="screen2-3d">Screen 2 (3D)</option>
+          <option value="break" disabled>----------</option>
+          <option value="screen3-2d">Screen 3 (2D)</option>
+          <option value="screen3-3d">Screen 3 (3D)</option>
+        </select>
+    </div>
+
+    <div class="formInstructions">
+        <h4>Please let us know if you would like any of the following refreshments</h4>
+    </div>
+
+    <div class="refreshments">
+        
+        <h4>Hotdog</h4>
+        <br>
+        <input type="radio" class="hotdog" name="hotdog" value="none" label for="none">None</label>
+        <input type="radio" class="hotdog" name="hotdog" value="small" label for="small">Small (£3)</label>
+        <input type="radio" class="hotdog" name="hotdog" value="medium" label for="medium">Medium (£4)</label>
+        <input type="radio" class="hotdog" name="hotdog" value="medium" label for="medium">Large (£5)</label>
+        <br><br><br>
+        <h4>Popcorn</h4>
+        <br>
+        <input type="radio" class="popcorn" name="popcorn" value="none" label for="none">None</label>
+        <input type="radio" class="popcorn" name="popcorn" value="small" label for="small">Small (£2.50)</label>
+        <input type="radio" class="popcorn" name="popcorn" value="medium" label for="medium">Medium (£3.50)</label>
+        <input type="radio" class="popcorn" name="popcorn" value="medium" label for="medium">Large (£5)</label>
+        <br><br><br>
+        <h4>Bottomless Drink</h4> 
+        <br>
+        <input type="radio" class="drink" name="drink" value="none" label for="none">None</label>
+        <input type="radio" class="drink" name="drink" value="small" label for="small">Small (£1)</label>
+        <input type="radio" class="drink" name="drink" value="medium" label for="medium">Medium (£2)</label>
+        <input type="radio" class="drink" name="drink" value="medium" label for="medium">Large (£3)</label>
+        
+    </div>
+    
+    <div class="submitBox">
+    <input type="submit" value="Submit">
+    </div>
+    </form>
+
+
+</div>
+
 <script src="index.js"></script>
 </body>
 </html>
