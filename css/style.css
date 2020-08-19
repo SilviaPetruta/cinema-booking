@@ -1,6 +1,6 @@
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: lightslategray;
 }
 
@@ -19,24 +19,28 @@ body {
 
 h1 {
     font-family: fantasy;
-    font-size: 26pt;
+    font-size: 22pt;
     margin: auto;
     color: darkslateblue;
     text-transform: uppercase;
 }
 
-h3, h4, h5 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: auto;
+h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
     color: darkslategrey;
 }
 
-.customerName, .ageBox, .ageBox2, .screenChoiceBox, .refreshments, .submitBox {
-    padding: 20px;
+em {
+    color: red;
+}
+
+.customerName, .ageBox, .screenChoiceBox, .refreshments, .submitBox {
+    padding: 20px 0px 10px 20px;
 }
 
 .formInstructions {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 20px;;
 }
 
@@ -53,14 +57,38 @@ select {
     border-radius: 3px;
 }
 
+label {
+    font-size: 10pt;
+    color: darkslategrey;
+}
+
+input[type=text] {
+    width: 300px;
+    margin-left: 10px;
+    color: darkslategrey;
+    border: none;
+}
+
+input[type=number] {
+    width: 30px;
+    margin-right: 10px;
+    color: darkslategrey;
+    border: none;
+}
+
+input[type=radio] {
+    margin: 10px 2px 25px 10px;
+    padding: 0px;;
+}
+
 input[type=submit] {
     background-color: darkslategray;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
-  }
+}
 
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: dimgray;
-  }
+}
