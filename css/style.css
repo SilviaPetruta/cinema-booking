@@ -35,7 +35,7 @@ em {
     color: red;
 }
 
-.customerName, .ageBox, .screenChoiceBox, .refreshments, .submitBox {
+.customerName, .ticketBox, .screenChoiceBox, .refreshments, .submitBox {
     padding: 20px 0px 10px 20px;
 }
 
@@ -81,7 +81,7 @@ input[type=radio] {
     padding: 0px;;
 }
 
-input[type=submit] {
+#submitButton {
     background-color: darkslategray;
     border: none;
     color: white;
@@ -89,6 +89,6 @@ input[type=submit] {
     text-decoration: none;
 }
 
-input[type=submit]:hover {
+#submitButton:hover {
     background-color: dimgray;
 }

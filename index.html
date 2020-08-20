@@ -25,15 +25,15 @@
             <h5>Please choose the amount of tickets you require</h5>
             <h6><em>Tickets are limited to a total of five per transaction</em></h6>
         </div>
-    <div class="ageBox">
+    <div class="ticketBox">
         <label for="Junior">Junior Tickets (£4): </label>
-        <input type="number" class="juniorTickets" name="ticketQuantity" value="0" min="0" max="5" value="0">
+        <input type="number" class="ticketOrdering" name="junior" min="0" max="5" value="0">
         <label for="Adult">Adult Tickets (£8): </label>
-        <input type="number" class="juniorTickets" name="ticketQuantity" value="0" min="0" max="5" value="0">
+        <input type="number" class="ticketOrdering" name="adult" min="0" max="5" value="0">
         <label for="Senior">Senior Tickets (£6): </label>
-        <input type="number" class="juniorTickets" name="ticketQuantity" value="0" min="0" max="5" value="0">
+        <input type="number" class="ticketOrdering" name="senior" min="0" max="5" value="0">
         <label for="Student">Student Tickets (£5): </label>
-        <input type="number" class="juniorTickets" name="ticketQuantity" value="0" min="0" max="5" value="0">
+        <input type="number" class="ticketOrdering" name="student" min="0" max="5" value="0">
         
     </div>
     
@@ -44,7 +44,7 @@
 
     <div class="screenChoiceBox">
         <select id="screenChoice" name="screenChoice">
-            <option value="" selected disabled hidden>Type of screen</option>
+            <option value="" selected disabled hidden>Choose your screen</option>
             <option value="screen1-2d">Screen 1 (2D)</option>
             <option value="screen1-3d" disabled>Screen 1 (3D)</option>
             <option value="break" disabled>----------</option>
@@ -88,8 +88,6 @@
         <input id="submitBtn" type="submit" value="Submit">
     </div>
     </form>
-
-
 </div>
 
 <script src="src/index.js"></script>
